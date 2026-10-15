@@ -1,0 +1,28 @@
+{
+  "prompt": "Cowboy sheriff and alien face each other across a table, pointing at a floating 3D terrain hologram. Wooden saloon beams pass through levitating alloy rings. Alien in indigo cloak, amber skin, crystal rings with dynamic structures. Subtle light beams.",
+  "original_prompt": "wide interior shot. a cowboy sheriff in a duster faces an alien across a table. both pointing at a 3D terrain hologram floating half a meter above a bare tabletop. wooden saloon beams pass through huge levitating alloy rings. add huge levitating metal rings above wooden ceiling beams. indigo cloak draped over amber skin. crystal rings with dynamic structures. dust lit by subtle beams of light",
+  "source_sha256": "09c9918001f0a9d3451f60e2c227ff511d1d0188a0f88bd145afe764db3586ee",
+  "api": {
+    "text": "```\n{\"prompt\":\"Cowboy sheriff and alien face each other across a table, pointing at a floating 3D terrain hologram. Wooden saloon beams pass through levitating alloy rings. Alien in indigo cloak, amber skin, crystal rings with dynamic structures. Subtle light beams.\"}\n```",
+    "model": "aliceai-llm-flash/latest",
+    "response_id": "b56e07a3-5d3d-4ee9-bf74-c449c78c0342",
+    "usage": {
+      "input_tokens": 349,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "valid": true,
+        "tool_tokens": 0
+      },
+      "output_tokens": 67,
+      "output_tokens_details": {
+        "reasoning_tokens": 0,
+        "valid": true
+      },
+      "total_tokens": 416,
+      "valid": true
+    },
+    "seconds": 31.08,
+    "created_at": "2026-10-15T19:21:47.534105+00:00",
+    "max_output_tokens": 900
+  }
+}

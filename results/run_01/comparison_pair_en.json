@@ -1,0 +1,343 @@
+{
+  "prompt": "Cowboy sheriff and alien face each other across a table, pointing at a floating 3D terrain hologram. Wooden saloon beams pass through levitating alloy rings. Alien in indigo cloak, amber skin, crystal rings with dynamic structures. Subtle light beams.",
+  "scene_id": "02_saloon",
+  "yandex_generation": {
+    "seed": null,
+    "seed_supported": false,
+    "usage": {},
+    "created": 1792092209,
+    "status": "completed",
+    "signature": "a7e3207a6da69231cdc7ebddf6672ff5e787bd0fc9ad684baac8d70f74332429",
+    "model": "aliceai-image-art-3.0",
+    "backend": "alice-art",
+    "dimensions": [
+      1216,
+      832
+    ],
+    "seconds": 6.35,
+    "created_at": "2026-10-15T19:23:30.538475+00:00"
+  },
+  "yandex_critique": {
+    "style_assessment": {
+      "western": {
+        "reach": 3,
+        "visibility": 2,
+        "evidence": {
+          "character": {
+            "visible": true,
+            "description": "cowboy in a hat and vest"
+          },
+          "environment": {
+            "visible": true,
+            "description": "wooden saloon interior with lanterns"
+          },
+          "main_object": {
+            "visible": false,
+            "description": "no specific western object like a gun or horse"
+          },
+          "action": {
+            "visible": true,
+            "description": "sitting at a table and pointing"
+          }
+        }
+      },
+      "scifi": {
+        "reach": 3,
+        "visibility": 2,
+        "evidence": {
+          "character": {
+            "visible": true,
+            "description": "alien with horns and glowing crystals"
+          },
+          "environment": {
+            "visible": true,
+            "description": "levitating metal rings hanging from ceiling"
+          },
+          "main_object": {
+            "visible": true,
+            "description": "glowing 3D terrain map"
+          },
+          "action": {
+            "visible": true,
+            "description": "interacting with a holographic/tech map"
+          }
+        }
+      }
+    },
+    "dominant_style": "balanced",
+    "balance_reason": "The image equally features western elements (cowboy, saloon) and sci-fi elements (alien, glowing map, metal rings), creating a cohesive fusion without one overpowering the other.",
+    "coherence_score": 8,
+    "checks": [
+      {
+        "id": "figures",
+        "status": "done",
+        "evidence": "A cowboy in a duster and an alien guest are seated on opposite sides of a wooden table."
+      },
+      {
+        "id": "map",
+        "status": "missing",
+        "evidence": "The map is a framed object sitting directly on the table surface, not floating with a large gap above it."
+      },
+      {
+        "id": "room",
+        "status": "missing",
+        "evidence": "The metal rings are suspended by chains from the ceiling, not floating without support, and they do not pass through the wooden beams."
+      }
+    ],
+    "revision_checks": [],
+    "feedback": "The image successfully blends the two genres with strong character designs and a clear setting. However, the specific requirements for the map (floating) and the room (rings passing through beams/levitating) are not met. The map sits on the table, and the rings are hanging by chains.",
+    "next_changes": [
+      {
+        "id": "r1",
+        "instruction": "Заставьте карту парить над столом с заметным зазором, убрав физическую опору.",
+        "anchor": "floating 3D map above table surface",
+        "keywords": [
+          "floating",
+          "map",
+          "above",
+          "table"
+        ]
+      },
+      {
+        "id": "r2",
+        "instruction": "Измените расположение колец так, чтобы они проходили сквозь деревянные балки и парили без цепей.",
+        "anchor": "metal rings passing through wooden beams levitating",
+        "keywords": [
+          "rings",
+          "passing",
+          "through",
+          "beams"
+        ]
+      }
+    ],
+    "rubric_version": "2.2",
+    "score_limits": [
+      {
+        "genre": "western",
+        "ceiling": 6,
+        "incomplete": [
+          "room"
+        ]
+      },
+      {
+        "genre": "scifi",
+        "ceiling": 6,
+        "incomplete": [
+          "map",
+          "room"
+        ]
+      }
+    ],
+    "western_score": 6,
+    "western_evidence": [
+      "cowboy in a hat and vest",
+      "wooden saloon interior with lanterns",
+      "no specific western object like a gun or horse",
+      "sitting at a table and pointing"
+    ],
+    "scifi_score": 6,
+    "scifi_evidence": [
+      "alien with horns and glowing crystals",
+      "levitating metal rings hanging from ceiling",
+      "glowing 3D terrain map",
+      "interacting with a holographic/tech map"
+    ],
+    "scene_score": 3.3,
+    "previous_tasks": [],
+    "changes": [
+      "Заставьте карту парить над столом с заметным зазором, убрав физическую опору.",
+      "Измените расположение колец так, чтобы они проходили сквозь деревянные балки и парили без цепей."
+    ],
+    "image_sha256": "a5c98c53e46f2bd7cf0d7cb020c2b58dd208e32c17460bae9fb307c9b9d5b9fa",
+    "api": {
+      "text": "```json\n{\n  \"style_assessment\": {\n    \"western\": {\n      \"reach\": 3,\n      \"visibility\": 2,\n      \"evidence\": {\n        \"character\": {\n          \"visible\": true,\n          \"description\": \"cowboy in a hat and vest\"\n        },\n        \"environment\": {\n          \"visible\": true,\n          \"description\": \"wooden saloon interior with lanterns\"\n        },\n        \"main_object\": {\n          \"visible\": false,\n          \"description\": \"no specific western object like a gun or horse\"\n        },\n        \"action\": {\n          \"visible\": true,\n          \"description\": \"sitting at a table and pointing\"\n        }\n      }\n    },\n    \"scifi\": {\n      \"reach\": 3,\n      \"visibility\": 2,\n      \"evidence\": {\n        \"character\": {\n          \"visible\": true,\n          \"description\": \"alien with horns and glowing crystals\"\n        },\n        \"environment\": {\n          \"visible\": true,\n          \"description\": \"levitating metal rings hanging from ceiling\"\n        },\n        \"main_object\": {\n          \"visible\": true,\n          \"description\": \"glowing 3D terrain map\"\n        },\n        \"action\": {\n          \"visible\": true,\n          \"description\": \"interacting with a holographic/tech map\"\n        }\n      }\n    }\n  },\n  \"dominant_style\": \"balanced\",\n  \"balance_reason\": \"The image equally features western elements (cowboy, saloon) and sci-fi elements (alien, glowing map, metal rings), creating a cohesive fusion without one overpowering the other.\",\n  \"coherence_score\": 8,\n  \"checks\": [\n    {\n      \"id\": \"figures\",\n      \"status\": \"done\",\n      \"evidence\": \"A cowboy in a duster and an alien guest are seated on opposite sides of a wooden table.\"\n    },\n    {\n      \"id\": \"map\",\n      \"status\": \"missing\",\n      \"evidence\": \"The map is a framed object sitting directly on the table surface, not floating with a large gap above it.\"\n    },\n    {\n      \"id\": \"room\",\n      \"status\": \"missing\",\n      \"evidence\": \"The metal rings are suspended by chains from the ceiling, not floating without support, and they do not pass through the wooden beams.\"\n    }\n  ],\n  \"revision_checks\": [],\n  \"feedback\": \"The image successfully blends the two genres with strong character designs and a clear setting. However, the specific requirements for the map (floating) and the room (rings passing through beams/levitating) are not met. The map sits on the table, and the rings are hanging by chains.\",\n  \"next_changes\": [\n    {\n      \"id\": \"r1\",\n      \"instruction\": \"Заставьте карту парить над столом с заметным зазором, убрав физическую опору.\",\n      \"anchor\": \"floating 3D map above table surface\",\n      \"keywords\": [\n        \"floating\",\n        \"map\",\n        \"above\",\n        \"table\"\n      ]\n    },\n    {\n      \"id\": \"r2\",\n      \"instruction\": \"Измените расположение колец так, чтобы они проходили сквозь деревянные балки и парили без цепей.\",\n      \"anchor\": \"metal rings passing through wooden beams levitating\",\n      \"keywords\": [\n        \"rings\",\n        \"passing\",\n        \"through\",\n        \"beams\"\n      ]\n    }\n  ]\n}\n```",
+      "model": "qwen3.6-35b-a3b/latest",
+      "response_id": "a31fea7d-0e2d-42d4-8931-cdd54109b83d",
+      "usage": {
+        "input_tokens": 3246,
+        "input_tokens_details": {
+          "cached_tokens": 1920,
+          "valid": true,
+          "tool_tokens": 0
+        },
+        "output_tokens": 3211,
+        "output_tokens_details": {
+          "reasoning_tokens": 0,
+          "valid": true
+        },
+        "total_tokens": 6457,
+        "valid": true
+      },
+      "seconds": 14.86,
+      "created_at": "2026-10-15T19:23:45.415736+00:00",
+      "max_output_tokens": 12000
+    }
+  },
+  "hf_generation": {
+    "model": "stabilityai/sdxl-turbo",
+    "seed": 173,
+    "steps": 4,
+    "guidance_scale": 0.0,
+    "dimensions": [
+      512,
+      512
+    ],
+    "gpu": "Tesla T4",
+    "placement": "cuda",
+    "torch_version": "2.11.0+cu130",
+    "token_lengths": [
+      51,
+      51
+    ],
+    "prompt_truncated": false,
+    "seconds_including_load": 84.47
+  },
+  "hf_critique": {
+    "style_assessment": {
+      "western": {
+        "reach": 3,
+        "visibility": 2,
+        "evidence": {
+          "character": {
+            "visible": true,
+            "description": "cowboy in a wide-brimmed hat and long duster coat"
+          },
+          "environment": {
+            "visible": true,
+            "description": "wooden saloon interior with beams and rustic table"
+          },
+          "main_object": {
+            "visible": true,
+            "description": "sturdy wooden table"
+          },
+          "action": {
+            "visible": true,
+            "description": "cowboy writing or pointing at the table"
+          }
+        }
+      },
+      "scifi": {
+        "reach": 1,
+        "visibility": 1,
+        "evidence": {
+          "character": {
+            "visible": true,
+            "description": "green-skinned alien figure with pointed hat"
+          },
+          "environment": {
+            "visible": false,
+            "description": "no sci-fi architecture, just a stained glass window"
+          },
+          "main_object": {
+            "visible": false,
+            "description": "map is flat on the table, not a hologram"
+          },
+          "action": {
+            "visible": false,
+            "description": "no sci-fi action like levitation or tech interaction"
+          }
+        }
+      }
+    },
+    "dominant_style": "western",
+    "balance_reason": "Western elements (saloon, cowboy, wooden table) define the composition and setting. Sci-fi elements are limited to the alien character and a glowing window, but the key sci-fi action (floating map) and environment details (levitating rings) are missing.",
+    "coherence_score": 5,
+    "checks": [
+      {
+        "id": "figures",
+        "status": "done",
+        "evidence": "Cowboy and alien are seated across from each other at the table."
+      },
+      {
+        "id": "map",
+        "status": "missing",
+        "evidence": "The map is a flat blue disc resting on the table, not a 3D hologram floating above it."
+      },
+      {
+        "id": "room",
+        "status": "missing",
+        "evidence": "Wooden beams are visible, but there are no levitating alloy rings passing through them."
+      }
+    ],
+    "revision_checks": [],
+    "feedback": "Western setting is strong and coherent. However, the sci-fi requirements are not met: the map is flat on the table instead of floating, and the room lacks the specified levitating rings. The alien is present but the sci-fi environment is weak.",
+    "next_changes": [
+      {
+        "id": "r1",
+        "instruction": "Сделай карту объёмной и парящей над столом, чтобы она соответствовала описанию голограммы.",
+        "anchor": "3D terrain hologram floating above the table",
+        "keywords": [
+          "3D",
+          "hologram",
+          "floating",
+          "above"
+        ]
+      },
+      {
+        "id": "r2",
+        "instruction": "Добавь парящие металлические кольца, через которые проходят деревянные балки потолка.",
+        "anchor": "levitating alloy rings passing through wooden beams",
+        "keywords": [
+          "levitating",
+          "rings",
+          "wooden",
+          "beams"
+        ]
+      }
+    ],
+    "rubric_version": "2.2",
+    "score_limits": [
+      {
+        "genre": "western",
+        "ceiling": 6,
+        "incomplete": [
+          "room"
+        ]
+      }
+    ],
+    "western_score": 6,
+    "western_evidence": [
+      "cowboy in a wide-brimmed hat and long duster coat",
+      "wooden saloon interior with beams and rustic table",
+      "sturdy wooden table",
+      "cowboy writing or pointing at the table"
+    ],
+    "scifi_score": 3,
+    "scifi_evidence": [
+      "green-skinned alien figure with pointed hat",
+      "no sci-fi architecture, just a stained glass window",
+      "map is flat on the table, not a hologram",
+      "no sci-fi action like levitation or tech interaction"
+    ],
+    "scene_score": 3.3,
+    "previous_tasks": [],
+    "changes": [
+      "Сделай карту объёмной и парящей над столом, чтобы она соответствовала описанию голограммы.",
+      "Добавь парящие металлические кольца, через которые проходят деревянные балки потолка."
+    ],
+    "image_sha256": "45e41d3bd7c970a94105c52e34bc95b86a3258b24a7f2043a156213a0e70d2e7",
+    "api": {
+      "text": "```json\n{\n  \"style_assessment\": {\n    \"western\": {\n      \"reach\": 3,\n      \"visibility\": 2,\n      \"evidence\": {\n        \"character\": {\n          \"visible\": true,\n          \"description\": \"cowboy in a wide-brimmed hat and long duster coat\"\n        },\n        \"environment\": {\n          \"visible\": true,\n          \"description\": \"wooden saloon interior with beams and rustic table\"\n        },\n        \"main_object\": {\n          \"visible\": true,\n          \"description\": \"sturdy wooden table\"\n        },\n        \"action\": {\n          \"visible\": true,\n          \"description\": \"cowboy writing or pointing at the table\"\n        }\n      }\n    },\n    \"scifi\": {\n      \"reach\": 1,\n      \"visibility\": 1,\n      \"evidence\": {\n        \"character\": {\n          \"visible\": true,\n          \"description\": \"green-skinned alien figure with pointed hat\"\n        },\n        \"environment\": {\n          \"visible\": false,\n          \"description\": \"no sci-fi architecture, just a stained glass window\"\n        },\n        \"main_object\": {\n          \"visible\": false,\n          \"description\": \"map is flat on the table, not a hologram\"\n        },\n        \"action\": {\n          \"visible\": false,\n          \"description\": \"no sci-fi action like levitation or tech interaction\"\n        }\n      }\n    }\n  },\n  \"dominant_style\": \"western\",\n  \"balance_reason\": \"Western elements (saloon, cowboy, wooden table) define the composition and setting. Sci-fi elements are limited to the alien character and a glowing window, but the key sci-fi action (floating map) and environment details (levitating rings) are missing.\",\n  \"coherence_score\": 5,\n  \"checks\": [\n    {\n      \"id\": \"figures\",\n      \"status\": \"done\",\n      \"evidence\": \"Cowboy and alien are seated across from each other at the table.\"\n    },\n    {\n      \"id\": \"map\",\n      \"status\": \"missing\",\n      \"evidence\": \"The map is a flat blue disc resting on the table, not a 3D hologram floating above it.\"\n    },\n    {\n      \"id\": \"room\",\n      \"status\": \"missing\",\n      \"evidence\": \"Wooden beams are visible, but there are no levitating alloy rings passing through them.\"\n    }\n  ],\n  \"revision_checks\": [],\n  \"feedback\": \"Western setting is strong and coherent. However, the sci-fi requirements are not met: the map is flat on the table instead of floating, and the room lacks the specified levitating rings. The alien is present but the sci-fi environment is weak.\",\n  \"next_changes\": [\n    {\n      \"id\": \"r1\",\n      \"instruction\": \"Сделай карту объёмной и парящей над столом, чтобы она соответствовала описанию голограммы.\",\n      \"anchor\": \"3D terrain hologram floating above the table\",\n      \"keywords\": [\n        \"3D\",\n        \"hologram\",\n        \"floating\",\n        \"above\"\n      ]\n    },\n    {\n      \"id\": \"r2\",\n      \"instruction\": \"Добавь парящие металлические кольца, через которые проходят деревянные балки потолка.\",\n      \"anchor\": \"levitating alloy rings passing through wooden beams\",\n      \"keywords\": [\n        \"levitating\",\n        \"rings\",\n        \"wooden\",\n        \"beams\"\n      ]\n    }\n  ]\n}\n```",
+      "model": "qwen3.6-35b-a3b/latest",
+      "response_id": "245ac221-3abe-4b61-bf3c-0d6f19bee9b5",
+      "usage": {
+        "input_tokens": 2514,
+        "input_tokens_details": {
+          "cached_tokens": 2240,
+          "valid": true,
+          "tool_tokens": 0
+        },
+        "output_tokens": 2547,
+        "output_tokens_details": {
+          "reasoning_tokens": 0,
+          "valid": true
+        },
+        "total_tokens": 5061,
+        "valid": true
+      },
+      "seconds": 11.55,
+      "created_at": "2026-10-15T19:23:24.189763+00:00",
+      "max_output_tokens": 12000
+    }
+  }
+}

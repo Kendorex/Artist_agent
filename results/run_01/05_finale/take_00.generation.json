@@ -1,0 +1,16 @@
+{
+  "seed": null,
+  "seed_supported": false,
+  "usage": {},
+  "created": 1792091777,
+  "status": "completed",
+  "signature": "16acd8027c107d80428fa38ea1a8d34c198b4586e62e307cd3ffcfee8e89e80b",
+  "model": "aliceai-image-art-3.0",
+  "backend": "alice-art",
+  "dimensions": [
+    1216,
+    832
+  ],
+  "seconds": 4.04,
+  "created_at": "2026-10-15T19:16:18.279138+00:00"
+}

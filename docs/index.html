@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Этот кадр мой. Пять сцен на стыке вестерна и фантастики, диалоги режиссёров и история дублей.">
+  <title>Этот кадр мой</title>
+  <link rel="preload" href="fonts/Podkova-Variable.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+  <a class="skip-link" href="#collection">Перейти к коллекции</a>
+  <main class="wrap">
+    <section class="intro" aria-labelledby="title">
+      <div class="intro-layout">
+        <h1 id="title" aria-label="Этот кадр мой"><span>Этот</span> <span>кадр</span> <span>мой</span></h1>
+        <p class="intro-text">Ковбой отстаивает свой вестерн, а его напарник с другой планеты перекраивает декорации и законы физики. Они снимают один фильм и никак не могут решить, чей это кадр.</p>
+      </div>
+    </section>
+    <section id="collection" aria-label="Коллекция сцен">
+      <div class="collection-heading"><h2>Коллекция</h2><span id="count"></span></div>
+      <nav id="scenes" class="scene-list" aria-label="Выбрать сцену"></nav>
+      <p id="empty" class="empty">Коллекция появится после генерации и экспорта результатов из ноутбука.</p>
+      <article id="frame-view" hidden>
+        <div class="frame-heading"><h3 id="frame-title"></h3><span id="take-label"></span></div>
+        <figure class="frame"><img id="frame-image" alt=""><figcaption id="frame-caption"></figcaption></figure>
+        <div class="take-row"><span>Дубли</span><div id="takes" aria-label="Выбрать дубль"></div></div>
+        <div class="frame-details">
+          <details><summary>Диалоги режиссёров</summary><div id="dialogue"></div></details>
+          <details><summary>Разбор дубля</summary>
+            <p id="decision" class="decision"></p><div id="scores" class="scores"></div>
+            <p id="feedback"></p><div id="evidence" class="muted"></div>
+            <h4>Предложенные изменения</h4><ul id="changes"></ul><div id="checks"></div>
+          </details>
+          <details><summary>Промпт и параметры</summary><p id="prompt" class="prompt"></p><pre id="parameters"></pre></details>
+        </div>
+      </article>
+    </section>
+    <section id="comparison" class="section" hidden aria-labelledby="comparison-title">
+      <div class="section-heading"><h2 id="comparison-title">Один сюжет, две модели</h2><p id="comparison-intro"></p></div>
+      <div class="comparison-grid">
+        <figure><img id="comparison-yandex" alt="Сцена, сгенерированная Yandex ART" loading="lazy"><figcaption>Yandex ART</figcaption></figure>
+        <figure><img id="comparison-hf" alt="Сцена, сгенерированная SDXL Turbo" loading="lazy"><figcaption>SDXL Turbo</figcaption></figure>
+      </div>
+      <details><summary>Оценки и параметры сравнения</summary>
+        <p id="comparison-yandex-feedback"></p><p id="comparison-feedback"></p><p id="comparison-warning" class="muted"></p>
+        <p id="comparison-prompt" class="prompt"></p><pre id="comparison-parameters"></pre>
+      </details>
+    </section>
+    <section id="about" class="section about" aria-labelledby="about-title">
+      <h2 id="about-title">О проекте</h2>
+      <div>
+        <p>У двух режиссёров разные предпочтения. Ковбой отстаивает дерево, пыль и привычный фронтир. Инопланетянин предлагает чужую архитектуру, парящие предметы и необычную работу технологий. Каждый отвечает на предложения другого, после чего оператор собирает общий промпт.</p>
+        <p>Визуальный критик получает изображение и возвращает замечания обоим режиссёрам. Для каждой сцены сохранены все полученные дубли. Можно проследить, какие детали появились после обсуждения, а какие так и остались нерешёнными.</p>
+        <details><summary>Результаты прогона</summary>
+          <div id="results-table" class="table-scroll"></div>
+          <p class="muted">Оценки получены от одного VLM-критика и могут содержать ошибки. Выбранный дубль не обязательно прошёл все условия. Оригинальные записи доступны в данных проекта.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+  <footer class="wrap"><a href="gallery.json" download>Данные проекта</a></footer>
+  <script src="gallery-data.js"></script><script src="app.js"></script>
+</body>
+</html>

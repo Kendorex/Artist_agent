@@ -1,0 +1,11 @@
+{
+  "packages": {
+    "Pillow": "11.3.0",
+    "torch": "2.11.0+cu130",
+    "diffusers": "0.35.1",
+    "transformers": "4.56.2",
+    "accelerate": "1.10.1",
+    "safetensors": "0.6.2"
+  },
+  "exported_at": "2026-10-15T19:28:37.983229+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "signature": "1a5a4b7113e3ae00cfc833a1114111962c2349b412cca24b3e6d6a913ccccb80",
+  "config": {
+    "text_model": "aliceai-llm-flash/latest",
+    "vision_model": "qwen3.6-35b-a3b/latest",
+    "image_backend": "alice-art",
+    "image_model": "aliceai-image-art-3.0",
+    "image_size": "1536x1024",
+    "max_refinements": 2,
+    "dialogue_rounds": 2,
+    "base_seed": 173,
+    "output_dir": "results/run_01",
+    "hf_model": "stabilityai/sdxl-turbo",
+    "hf_steps": 4,
+    "hf_scene": "02_saloon",
+    "review_scene": "02_saloon"
+  },
+  "pipeline_version": "2.2",
+  "started_at": "2026-10-15T19:02:53.475061+00:00"
+}

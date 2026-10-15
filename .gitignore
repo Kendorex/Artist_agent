@@ -1,0 +1,10 @@
+.env
+.env.*
+env.m1
+*.key
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+results/**/cache/
+results/**/vision_check*
+*.zip
